@@ -44,6 +44,18 @@ Six-stage data-centric alignment pipeline — prompts → on-policy generation �
 
 ---
 
+## More Agent Research
+
+| Repo | Summary |
+|------|---------|
+| [**updr-reasoning**](https://github.com/runhaoli-creator/updr-reasoning) | Uncertainty-Prompted Debate and Repair — adaptive-compute multi-persona reasoning with uncertainty-gated self-repair |
+| [**RAMTL**](https://github.com/runhaoli-creator/RAMTL) | Role-Adaptive Multi-Tool Learning — single-backbone multi-role agent framework for tool use and function calling |
+| [**DEAMS**](https://github.com/runhaoli-creator/DEAMS) | Decentralized Epistemic Alignment for Multimodal Swarms — MA-GRPO across heterogeneous Qwen-VL / InternVL agents |
+| [**PAGC**](https://github.com/runhaoli-creator/PAGC) | Partner-Adaptive Grounded Communication — cooperative MARL with emergent text-grounded communication |
+| [**KTM-WM**](https://github.com/runhaoli-creator/KTM-WM) | Training-free kernel-trick world models for LLM agent planning (beam / MPC / CEM planners) |
+
+---
+
 ## Tech Stack
 
 **LLM / Agent Frameworks**
