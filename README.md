@@ -16,7 +16,7 @@ M.S. Computer Science (AI) at **USC** · Graduating **May 2027** · Los Angeles
 
 I build and evaluate LLM systems, from model post-training and agent orchestration to inference services and evaluation tooling. My experience spans ML engineering internships at **TikTok**, **General Motors**, and **Shanghai AI Laboratory**, and research at **Princeton** and **UC Berkeley**.
 
-[Industry experience](#industry-experience) · [Featured code](#featured-code) · [Research](#research) · [Toolkit](#toolkit)
+[Industry experience](#industry-experience) · [Featured research & code](#featured-research--code) · [Research](#research) · [Toolkit](#toolkit)
 
 ## Industry experience
 
@@ -38,32 +38,31 @@ Shanghai, China · Jun–Sep 2025
 - Built a LangGraph agent workflow that improved task success from **61% to 83%**, and hybrid retrieval that raised Recall@5 from **71% to 89%**.
 - Fine-tuned and served vision-language models with QLoRA, vLLM, FastAPI, and Redis, achieving **p95 latency below 500 ms**.
 
-## Featured code
+## Featured research & code
 
-### [DMAPO](https://github.com/runhaoli-creator/dmapo) — Model alignment
+### DMAPO — Less Data, Better Alignment
 
-A pipeline for candidate generation, multi-judge scoring, confidence filtering, and preference optimization. Includes SFT, DPO, KTO, ORPO, and SimPO baselines.
+**Data-Centric Multi-Evaluator Agreement for Preference Optimization**
 
-**Focus:** training pipelines, data quality, and controlled evaluation.  
-[Overview & reported results](https://github.com/runhaoli-creator/dmapo#results) · [Training implementation](https://github.com/runhaoli-creator/dmapo/blob/main/src/dmapo/training/train.py)
+A model-alignment pipeline that generates on-policy responses, scores them with specialized evaluators, and uses agreement and confidence filtering to select preference-training data. The paper studies a curated set of **1,871 examples from 54,236 candidates**, with KTO training and controlled comparisons against other preference-optimization methods.
 
-### [ACM-ICL](https://github.com/runhaoli-creator/acm-icl) — Agent reliability & serving
+**Engineering:** candidate generation · multi-evaluator scoring · LoRA training · evaluation pipelines  
+[Paper](https://arxiv.org/abs/2607.25136) · [Code](https://github.com/runhaoli-creator/dmapo) · [Training implementation](https://github.com/runhaoli-creator/dmapo/blob/main/src/dmapo/training/train.py)
 
-A solver–skeptic–verifier–judge pipeline for reasoning under unreliable peer influence. Combines structured outputs, calibrated trust, SFT/DPO training, and vLLM multi-LoRA inference.
+### PreDiff-LM — Hybrid Attention for Diffusion Language Models
 
-**Focus:** agent orchestration, shared-backbone serving, and evaluation.  
-[Architecture & setup](https://github.com/runhaoli-creator/acm-icl#model-architecture) · [vLLM serving implementation](https://github.com/runhaoli-creator/acm-icl/blob/main/acm_icl/serving/vllm_server.py)
+**Pretrained Discrete Masked Diffusion Language Modeling with Hybrid Attention**
 
-### [paper_read](https://github.com/runhaoli-creator/paper_read) — Research developer tools
+Adapts pretrained autoregressive transformers to masked diffusion while retaining causal attention in the observed prompt and bidirectional attention in the target. Under matched initialization and training, hybrid attention improves WikiText-103 perplexity from **34.1 to 28.7** and MAUVE from **0.71 to 0.78** over uniform bidirectional attention.
 
-Six research skills backed by a Python standard-library core: paper discovery, explanation, trend analysis, citation verification, idea generation, and critical review.
-
-**Focus:** practical CLI tooling, configurable workflows, and source verification.  
-[Install & use](https://github.com/runhaoli-creator/paper_read#install) · [CLI examples](https://github.com/runhaoli-creator/paper_read#usage)
+**Research:** attention adaptation · discrete diffusion · confidence-aware decoding · controlled evaluation  
+[Paper](https://arxiv.org/abs/2607.25157) · [OpenReview](https://openreview.net/forum?id=zl9y14yJuN)
 
 <details>
-<summary><strong>More projects in multi-agent systems</strong></summary>
+<summary><strong>Other open-source projects</strong></summary>
 
+- [ACM-ICL](https://github.com/runhaoli-creator/acm-icl) — Agent reliability, calibrated reasoning, and vLLM multi-LoRA serving.
+- [paper_read](https://github.com/runhaoli-creator/paper_read) — Research workflows and citation-verification tools.
 - [latent-agent-team](https://github.com/runhaoli-creator/latent-agent-team) — Budgeted latent communication between agents.
 - [RAMTL](https://github.com/runhaoli-creator/RAMTL) — Shared-backbone, multi-role tool use.
 - [updr-reasoning](https://github.com/runhaoli-creator/updr-reasoning) — Uncertainty-guided debate and self-repair.
