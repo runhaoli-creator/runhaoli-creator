@@ -2,146 +2,99 @@
 
 # Runhao Li
 
-### Building intelligent multi-agent LLM systems
+### LLMs · Reliable Agents · ML Systems
 
-LLM Agent Engineer · MS CS @ University of Southern California
+M.S. Computer Science (AI) at **USC** · Graduating **May 2027** · Los Angeles
 
-[![Email](https://img.shields.io/badge/Email-runhaoli%40usc.edu-0078D4?style=flat&logo=gmail&logoColor=white)](mailto:runhaoli@usc.edu)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-runhao--li-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/runhao-li-lee021004)
-[![GitHub](https://img.shields.io/badge/GitHub-runhaoli--creator-181717?style=flat&logo=github&logoColor=white)](https://github.com/runhaoli-creator)
+[Website](https://runhao-li.runhaolee136.chatgpt.site) · [Google Scholar](https://scholar.google.com/citations?user=HkEIcZ0AAAAJ&hl=en) · [LinkedIn](https://www.linkedin.com/in/runhao-li-lee021004) · [Email](mailto:runhaoli@usc.edu)
 
-</div>
-
----
-
-## About
-
-I design and post-train **multi-agent LLM systems** — from learned inter-agent communication protocols to data-centric alignment pipelines to production vLLM serving stacks. My focus is on agent teams that are reliable, interpretable, and cheap to deploy end-to-end.
-
-**Current interests:** multi-agent orchestration · post-training (DPO / KTO / GRPO) · vLLM multi-LoRA serving · agent evaluation harnesses · learned latent communication protocols.
-
----
-
-## Featured Projects
-
-### [latent-agent-team](https://github.com/runhaoli-creator/latent-agent-team) &nbsp;·&nbsp; Budgeted Multi-Agent Communication
-
-Five-agent team (Planner · Retriever · Browser · Verifier · Memory) that replaces natural-language inter-agent messages with **learned latent channels** — continuous embeddings or VQ codes with an adaptive bitrate scheduler.
-
-**Results** · Mind2Web **81.5%** ElemAcc · WebShop **72.4%** SR · AgentBench **66.8%** SR
-
-### [acm-icl](https://github.com/runhaoli-creator/acm-icl) &nbsp;·&nbsp; Autonomy-Calibrated Multi-Agent In-Context Learning
-
-Four-stage inference pipeline (**Solver → Skeptic → Verifier → Calibrated Judge**) with DD-CoT structured reasoning and per-peer reliability scoring for epistemic robustness under adversarial peer pressure.
-
-**Results** · **73.9%** average across 5 peer-pressure benchmarks · **+13.7 pp** over strongest multi-agent-debate baseline (MAD)
-
-### [dmapo](https://github.com/runhaoli-creator/dmapo) &nbsp;·&nbsp; Data-centric Multi-Agent Preference Optimization
-
-Six-stage data-centric alignment pipeline — prompts → on-policy generation → three-judge multi-agent scoring (Qwen3-8B) → process critic → confidence gating → KTO. Unified trainer supporting DPO / KTO / ORPO / SimPO / SFT.
-
-**Results** · Mistral-7B on only **1,871** gated examples (3.45% accept rate) beats every baseline trained on 10–20k — MT-Bench **7.62** · AlpacaEval **96.3%** · win-rate **85.3%** vs. 68.2% best baseline
-
----
-
-## More Agent Research
-
-| Repo | Summary |
-|------|---------|
-| [**updr-reasoning**](https://github.com/runhaoli-creator/updr-reasoning) | Uncertainty-Prompted Debate and Repair — adaptive-compute multi-persona reasoning with uncertainty-gated self-repair |
-| [**RAMTL**](https://github.com/runhaoli-creator/RAMTL) | Role-Adaptive Multi-Tool Learning — single-backbone multi-role agent framework for tool use and function calling |
-| [**DEAMS**](https://github.com/runhaoli-creator/DEAMS) | Decentralized Epistemic Alignment for Multimodal Swarms — MA-GRPO across heterogeneous Qwen-VL / InternVL agents |
-| [**PAGC**](https://github.com/runhaoli-creator/PAGC) | Partner-Adaptive Grounded Communication — cooperative MARL with emergent text-grounded communication |
-| [**KTM-WM**](https://github.com/runhaoli-creator/KTM-WM) | Training-free kernel-trick world models for LLM agent planning (beam / MPC / CEM planners) |
-
----
-
-## Tech Stack
-
-**LLM / Agent Frameworks**
-
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white)
-![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat)
-![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat&logo=huggingface&logoColor=black)
-![TRL](https://img.shields.io/badge/TRL-FFBE0B?style=flat)
-![PEFT](https://img.shields.io/badge/PEFT-FF6F61?style=flat)
-![MCP](https://img.shields.io/badge/MCP-000000?style=flat)
-![Function%20Calling](https://img.shields.io/badge/Function%20Calling-6E44FF?style=flat)
-![Outlines](https://img.shields.io/badge/outlines-4B32C3?style=flat)
-
-**Models**
-
-![Qwen](https://img.shields.io/badge/Qwen2.5-1677FF?style=flat)
-![Llama](https://img.shields.io/badge/Llama%203-0867EC?style=flat)
-![Mistral](https://img.shields.io/badge/Mistral-FF7000?style=flat)
-![Gemma](https://img.shields.io/badge/Gemma%202-4285F4?style=flat)
-![Phi](https://img.shields.io/badge/Phi--3-5E5DF0?style=flat)
-![Qwen-VL](https://img.shields.io/badge/Qwen2--VL-1677FF?style=flat)
-
-**Retrieval / RAG**
-
-![FAISS](https://img.shields.io/badge/FAISS-0467DF?style=flat)
-![BGE](https://img.shields.io/badge/BGE-FFD21E?style=flat)
-![BM25](https://img.shields.io/badge/BM25-8E44AD?style=flat)
-![Reranker](https://img.shields.io/badge/bge--reranker--v2-FFD21E?style=flat)
-![HyDE](https://img.shields.io/badge/HyDE-6A5ACD?style=flat)
-![Vector%20DB](https://img.shields.io/badge/Vector%20DB-00A3E0?style=flat)
-
-**Training / Post-Training**
-
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
-![QLoRA](https://img.shields.io/badge/QLoRA-4B32C3?style=flat)
-![DPO](https://img.shields.io/badge/DPO-2E8B57?style=flat)
-![KTO](https://img.shields.io/badge/KTO-2E8B57?style=flat)
-![GRPO](https://img.shields.io/badge/GRPO-2E8B57?style=flat)
-![DeepSpeed](https://img.shields.io/badge/DeepSpeed-1E90FF?style=flat)
-![Accelerate](https://img.shields.io/badge/Accelerate-FFBE0B?style=flat)
-![FSDP](https://img.shields.io/badge/FSDP-EE4C2C?style=flat)
-
-**Deployment / Serving**
-
-![vLLM](https://img.shields.io/badge/vLLM-EE4C2C?style=flat)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white)
-![SageMaker](https://img.shields.io/badge/SageMaker-232F3E?style=flat&logo=amazon&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white)
-
-**Evaluation / MLOps**
-
-![wandb](https://img.shields.io/badge/Weights%20%26%20Biases-FFBE00?style=flat&logo=weightsandbiases&logoColor=black)
-![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=flat&logo=mlflow&logoColor=white)
-![LLM--as--Judge](https://img.shields.io/badge/LLM--as--Judge-6E44FF?style=flat)
-![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat&logo=pytest&logoColor=white)
-
-**General**
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnubash&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
-![Hydra](https://img.shields.io/badge/Hydra-54C7EC?style=flat)
-
----
-
-## GitHub Stats
-
-<div align="center">
-
-![Runhao's GitHub stats](https://github-readme-stats.vercel.app/api?username=runhaoli-creator&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=runhaoli-creator&layout=compact&hide_border=true&langs_count=8)
-
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=runhaoli-creator&hide_border=true)
+**Seeking 2027 opportunities in Software Engineering (AI/ML) and Machine Learning Engineering.**
 
 </div>
 
 ---
 
-<div align="center">
+I build and evaluate LLM systems, from model post-training and agent orchestration to inference services and evaluation tooling. My experience spans ML engineering internships at **TikTok**, **General Motors**, and **Shanghai AI Laboratory**, and research at **Princeton** and **UC Berkeley**.
 
-**Open to full-time LLM Agent Engineer roles · 2026**
+[Industry experience](#industry-experience) · [Featured code](#featured-code) · [Research](#research) · [Toolkit](#toolkit)
 
-[runhaoli@usc.edu](mailto:runhaoli@usc.edu) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/runhao-li-lee021004) &nbsp;·&nbsp; [GitHub](https://github.com/runhaoli-creator)
+## Industry experience
 
-</div>
+**TikTok · Machine Learning Engineer Intern**  
+Bellevue, WA · Jun–Sep 2026
+
+- Post-trained a router–expert moderation cascade with SFT and KTO, improving production precision and recall by approximately **13.5 percentage points** while routing **15% of traffic** to the expert.
+- Fine-tuned a multimodal moderation model, raising AUC from **0.75 to 0.93**; built CaseBank Agent for case replay, human review, and hard-example collection.
+
+**General Motors · Machine Learning Engineer Intern**  
+Detroit, MI · Jan–Apr 2026
+
+- Co-developed **PreDiff-LM**, adapting pretrained autoregressive models to masked diffusion through hybrid attention.
+- Under matched initialization and training, improved WikiText-103 perplexity from **34.1 to 28.7** over uniform bidirectional attention; studied confidence-aware parallel decoding and self-conditioning.
+
+**Shanghai AI Laboratory · Machine Learning Engineer Intern**  
+Shanghai, China · Jun–Sep 2025
+
+- Built a LangGraph agent workflow that improved task success from **61% to 83%**, and hybrid retrieval that raised Recall@5 from **71% to 89%**.
+- Fine-tuned and served vision-language models with QLoRA, vLLM, FastAPI, and Redis, achieving **p95 latency below 500 ms**.
+
+## Featured code
+
+### [DMAPO](https://github.com/runhaoli-creator/dmapo) — Model alignment
+
+A pipeline for candidate generation, multi-judge scoring, confidence filtering, and preference optimization. Includes SFT, DPO, KTO, ORPO, and SimPO baselines.
+
+**Focus:** training pipelines, data quality, and controlled evaluation.  
+[Overview & reported results](https://github.com/runhaoli-creator/dmapo#results) · [Training implementation](https://github.com/runhaoli-creator/dmapo/blob/main/src/dmapo/training/train.py)
+
+### [ACM-ICL](https://github.com/runhaoli-creator/acm-icl) — Agent reliability & serving
+
+A solver–skeptic–verifier–judge pipeline for reasoning under unreliable peer influence. Combines structured outputs, calibrated trust, SFT/DPO training, and vLLM multi-LoRA inference.
+
+**Focus:** agent orchestration, shared-backbone serving, and evaluation.  
+[Architecture & setup](https://github.com/runhaoli-creator/acm-icl#model-architecture) · [vLLM serving implementation](https://github.com/runhaoli-creator/acm-icl/blob/main/acm_icl/serving/vllm_server.py)
+
+### [paper_read](https://github.com/runhaoli-creator/paper_read) — Research developer tools
+
+Six research skills backed by a Python standard-library core: paper discovery, explanation, trend analysis, citation verification, idea generation, and critical review.
+
+**Focus:** practical CLI tooling, configurable workflows, and source verification.  
+[Install & use](https://github.com/runhaoli-creator/paper_read#install) · [CLI examples](https://github.com/runhaoli-creator/paper_read#usage)
+
+<details>
+<summary><strong>More projects in multi-agent systems</strong></summary>
+
+- [latent-agent-team](https://github.com/runhaoli-creator/latent-agent-team) — Budgeted latent communication between agents.
+- [RAMTL](https://github.com/runhaoli-creator/RAMTL) — Shared-backbone, multi-role tool use.
+- [updr-reasoning](https://github.com/runhaoli-creator/updr-reasoning) — Uncertainty-guided debate and self-repair.
+- [DEAMS](https://github.com/runhaoli-creator/DEAMS) — Alignment across heterogeneous vision-language agents.
+- [PAGC](https://github.com/runhaoli-creator/PAGC) — Grounded communication in cooperative multi-agent learning.
+- [KTM-WM](https://github.com/runhaoli-creator/KTM-WM) — Kernel-based world models for agent planning.
+
+</details>
+
+## Research
+
+| Experience | Work |
+| :--- | :--- |
+| **Princeton University** · Research Assistant<br>May–Sep 2026 | **Insurance Credit:** causal evaluation of preventive agent actions; fault-injection experiments across 50,000+ episodes and five agents. |
+| **UC Berkeley** · Research Assistant<br>Sep–Dec 2025 | **Data-centric alignment:** multi-evaluator agreement, confidence filtering, and preference optimization; asynchronous judge services with FastAPI, Redis, Docker, and CI. |
+
+My research interests include agent reliability, diffusion language models, model alignment, and physical reasoning.
+
+[Publications & project details](https://runhao-li.runhaolee136.chatgpt.site/#publications) · [Google Scholar](https://scholar.google.com/citations?user=HkEIcZ0AAAAJ&hl=en) · [OpenReview](https://openreview.net/profile?id=~Runhao_Li3)
+
+## Toolkit
+
+| Area | Technologies |
+| :--- | :--- |
+| **Software & services** | Python · C++ · SQL · FastAPI · Docker · Kubernetes · AWS · Redis |
+| **Training & alignment** | PyTorch · Transformers · TRL · PEFT · LoRA/QLoRA · DeepSpeed · FSDP |
+| **Agents, retrieval & inference** | LangGraph · vLLM · FAISS · BM25 · Reranking |
+| **Evaluation & delivery** | MLflow · Weights & Biases · GitHub Actions |
+
+**Education:** USC M.S. Computer Science, AI track (2025–2027, GPA 4.0/4.0) · Hong Kong Baptist University B.S. Computer Science, Honors (2021–2025, GPA 3.96/4.0).
+
+---
+
+Interested in LLMs, agents, or ML infrastructure? [Get in touch](mailto:runhaoli@usc.edu).
