@@ -56,7 +56,7 @@ A model-alignment pipeline that generates on-policy responses, scores them with 
 Adapts pretrained autoregressive transformers to masked diffusion while retaining causal attention in the observed prompt and bidirectional attention in the target. Under matched initialization and training, hybrid attention improves WikiText-103 perplexity from **34.1 to 28.7** and MAUVE from **0.71 to 0.78** over uniform bidirectional attention.
 
 **Research:** attention adaptation · discrete diffusion · confidence-aware decoding · controlled evaluation  
-[Paper](https://arxiv.org/abs/2607.25157) · [OpenReview](https://openreview.net/forum?id=zl9y14yJuN)
+[Paper](https://arxiv.org/abs/2607.25157) · [OpenReview](https://openreview.net/forum?id=zl9y14yJuN) · [Code](https://github.com/runhaoli-creator/PreDiff-LM-code) · [Model implementation](https://github.com/runhaoli-creator/PreDiff-LM-code/blob/main/models/masked_diffusion_lm.py)
 
 <details>
 <summary><strong>Other open-source projects</strong></summary>
