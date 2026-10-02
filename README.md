@@ -1,69 +1,107 @@
-<div align="center">
-
 # Runhao Li
 
-### LLMs · Reliable Agents · ML Systems
+I am a master's student in Computer Science (AI) at the **University of Southern California**, graduating in **May 2027**.
 
-M.S. Computer Science (AI) at **USC** · Graduating **May 2027** · Los Angeles
+I build and evaluate LLMs and agents. My interests include **reliable agent systems**, **model alignment**, **diffusion language models**, and **physical reasoning**.
 
-[Website](https://runhaoli-creator.github.io/) · [Google Scholar](https://scholar.google.com/citations?user=HkEIcZ0AAAAJ&hl=en) · [LinkedIn](https://www.linkedin.com/in/runhao-li-lee021004) · [Email](mailto:runhaoli@usc.edu)
+Previously, I worked on machine learning at **TikTok**, **General Motors**, and **Shanghai AI Laboratory**, with research experience at **Princeton** and **UC Berkeley**.
 
-**Seeking 2027 opportunities in Software Engineering (AI/ML) and Machine Learning Engineering.**
+[email](mailto:runhaoli@usc.edu) &nbsp;/&nbsp; [scholar](https://scholar.google.com/citations?user=HkEIcZ0AAAAJ&hl=en) &nbsp;/&nbsp; [linkedin](https://www.linkedin.com/in/runhao-li-lee021004) &nbsp;/&nbsp; [openreview](https://openreview.net/profile?id=~Runhao_Li3) &nbsp;/&nbsp; [website](https://runhaoli-creator.github.io/)
 
-</div>
+Seeking **2027 opportunities in Software Engineering (AI/ML) and Machine Learning Engineering**.
 
----
+[research](#research) · [experience](#experience) · [open-source projects](#open-source-projects) · [education](#education)
 
-I build and evaluate LLM systems, from model post-training and agent orchestration to inference services and evaluation tooling. My experience spans ML engineering internships at **TikTok**, **General Motors**, and **Shanghai AI Laboratory**, and research at **Princeton** and **UC Berkeley**.
+## research
 
-[Industry experience](#industry-experience) · [Featured research & code](#featured-research--code) · [Research](#research) · [Toolkit](#toolkit)
+I am interested in how models learn, reason, and act reliably — from better training signals to agents that understand the world around them.
 
-## Industry experience
+<table>
+<tr>
+<td width="155" align="center" valign="middle"><img src="./research-physgraphnet.svg" width="145" alt="Schematic of object, relation, and memory nodes in a physical-state scene graph"></td>
+<td valign="top">
+<p><strong><a href="https://openreview.net/forum?id=vxrLfNSsBQ">PhysGraphNet: Physical-State Scene Graphs via Latent Graph Reasoning and Counterfactual Supervision</a></strong><br>
+<strong>Runhao Li</strong>, Zhengtao Yao, Yan Wen, Guang Yang, Siheng Wang, Chenhao Wei, Rongchao Zhang, Guoqing Ma, Haoyan Xu, Junhao Dong<br>
+<em><em>NeurIPS</em>, 2026 · Poster</em></p>
+<p><a href="https://openreview.net/forum?id=vxrLfNSsBQ">openreview</a> &nbsp;/&nbsp; <a href="https://openreview.net/pdf?id=vxrLfNSsBQ">pdf</a></p>
+<p>Predicts physical-state scene graphs from an image and a goal, combining latent graph reasoning with counterfactual supervision to support physical reasoning.</p>
+</td>
+</tr>
+<tr>
+<td width="155" align="center" valign="middle"><img src="./research-videogpa.svg" width="145" alt="Schematic of geometry consistency across video frames"></td>
+<td valign="top">
+<p><strong><a href="https://arxiv.org/abs/2601.23286">VideoGPA: Distilling Geometry Priors for 3D-Consistent Video Generation</a></strong><br>
+Hongyang Du, Junjie Ye, Xiaoyan Cong, <strong>Runhao Li</strong>, et al.<br>
+<em><em>ICML</em>, 2026</em></p>
+<p><a href="https://arxiv.org/abs/2601.23286">paper</a> &nbsp;/&nbsp; <a href="https://openreview.net/forum?id=neygndmdoS">openreview</a></p>
+<p>Uses geometry-derived preference signals to improve the 3D consistency of video diffusion models without human preference annotations.</p>
+</td>
+</tr>
+<tr>
+<td width="155" align="center" valign="middle"><img src="./research-prediff.svg" width="145" alt="Schematic of masked tokens becoming a complete sequence"></td>
+<td valign="top">
+<p><strong><a href="https://arxiv.org/abs/2607.25157">PreDiff-LM: Pretrained Discrete Masked Diffusion Language Modeling with Hybrid Attention</a></strong><br>
+<strong>Runhao Li</strong>, Zhengtao Yao, Xupeng Chen, et al.<br>
+<em>Preprint, 2026</em></p>
+<p><a href="https://arxiv.org/abs/2607.25157">paper</a> &nbsp;/&nbsp; <a href="https://openreview.net/forum?id=zl9y14yJuN">openreview</a> &nbsp;/&nbsp; <a href="https://github.com/runhaoli-creator/PreDiff-LM-code">code</a></p>
+<p>Studies hybrid attention as a way to adapt causal language models to bidirectional denoising, with controlled comparisons of generation quality and training efficiency.</p>
+</td>
+</tr>
+<tr>
+<td width="155" align="center" valign="middle"><img src="./research-dmapo.svg" width="145" alt="Schematic of multiple evaluators selecting preference data"></td>
+<td valign="top">
+<p><strong><a href="https://arxiv.org/abs/2607.25136">Less Data, Better Alignment: Data-Centric Multi-Evaluator Agreement for Preference Optimization</a></strong><br>
+Zhengtao Yao, <strong>Runhao Li</strong>, Xupeng Chen, et al.<br>
+<em>Preprint, 2026</em></p>
+<p><a href="https://arxiv.org/abs/2607.25136">paper</a> &nbsp;/&nbsp; <a href="https://github.com/runhaoli-creator/dmapo">code</a></p>
+<p>DMAPO selects 1,871 training examples from 54,236 candidates using multi-evaluator agreement and critique, examining data quality in preference optimization.</p>
+</td>
+</tr>
+<tr>
+<td width="155" align="center" valign="middle"><img src="./research-robodream.svg" width="145" alt="Schematic of composing motion, scene, and object priors"></td>
+<td valign="top">
+<p><strong><a href="https://arxiv.org/abs/2606.02577">RoboDream: Compositional World Models for Scalable Robot Data Synthesis</a></strong><br>
+Junjie Ye, Rong Xue, Basile Van Hoorick, <strong>Runhao Li</strong>, et al.<br>
+<em>Preprint, 2026</em></p>
+<p><a href="https://arxiv.org/abs/2606.02577">paper</a> &nbsp;/&nbsp; <a href="https://junjieye.com/RoboDream/">project</a></p>
+<p>Composes robot motion, scene priors, and object priors to synthesize demonstrations in new environments and support data-efficient robot learning.</p>
+</td>
+</tr>
+<tr>
+<td width="155" align="center" valign="middle"><img src="./research-cookbook.svg" width="145" alt="Schematic of 3D data, learning, and applications"></td>
+<td valign="top">
+<p><strong><a href="https://arxiv.org/abs/2606.04291">A Cookbook of 3D Vision: Data, Learning Paradigms, and Application</a></strong><br>
+Hongyang Du, Zongxia Li, Dawei Liu, <strong>Runhao Li</strong>, et al.<br>
+<em><em>CVPR OpenSUN3D Workshop</em>, 2026</em></p>
+<p><a href="https://arxiv.org/abs/2606.04291">paper</a> &nbsp;/&nbsp; <a href="https://openreview.net/forum?id=5wHE69kDC5">openreview</a></p>
+<p>A data-centric map of 3D representations, datasets, learning paradigms, and applications spanning reconstruction, generation, and world modeling.</p>
+</td>
+</tr>
+</table>
 
-**TikTok · Machine Learning Engineer Intern**  
-Bellevue, WA · Jun–Sep 2026
+[More on Google Scholar](https://scholar.google.com/citations?user=HkEIcZ0AAAAJ&hl=en)
 
-- Post-trained a router–expert moderation cascade with SFT and KTO, improving production precision and recall by approximately **13.5 percentage points** while routing **15% of traffic** to the expert.
-- Fine-tuned a multimodal moderation model, raising AUC from **0.75 to 0.93**; built CaseBank Agent for case replay, human review, and hard-example collection.
+## experience
 
-**General Motors · Machine Learning Engineer Intern**  
-Detroit, MI · Jan–Apr 2026
+| When | Where & work |
+| :--- | :--- |
+| Jun–Sep 2026 | **TikTok · ML Engineer Intern**<br>Post-training, multimodal moderation, and agent tooling for case replay and hard-example collection. |
+| May–Sep 2026 | **Princeton University · Research Assistant**<br>Causal evaluation and credit assignment for preventive actions in LLM agents. |
+| Jan–Apr 2026 | **General Motors · ML Engineer Intern**<br>Hybrid attention and confidence-aware decoding for pretrained diffusion language models. |
+| Sep–Dec 2025 | **UC Berkeley · Research Assistant**<br>Data-centric alignment through multi-evaluator agreement and preference optimization. |
+| Jun–Sep 2025 | **Shanghai AI Laboratory · ML Engineer Intern**<br>Agent orchestration, retrieval, and efficient vision-language model serving. |
 
-- Co-developed **PreDiff-LM**, adapting pretrained autoregressive models to masked diffusion through hybrid attention.
-- Under matched initialization and training, improved WikiText-103 perplexity from **34.1 to 28.7** over uniform bidirectional attention; studied confidence-aware parallel decoding and self-conditioning.
+## open-source projects
 
-**Shanghai AI Laboratory · Machine Learning Engineer Intern**  
-Shanghai, China · Jun–Sep 2025
-
-- Built a LangGraph agent workflow that improved task success from **61% to 83%**, and hybrid retrieval that raised Recall@5 from **71% to 89%**.
-- Fine-tuned and served vision-language models with QLoRA, vLLM, FastAPI, and Redis, achieving **p95 latency below 500 ms**.
-
-## Featured research & code
-
-### DMAPO — Less Data, Better Alignment
-
-**Data-Centric Multi-Evaluator Agreement for Preference Optimization**
-
-A model-alignment pipeline that generates on-policy responses, scores them with specialized evaluators, and uses agreement and confidence filtering to select preference-training data. The paper studies a curated set of **1,871 examples from 54,236 candidates**, with KTO training and controlled comparisons against other preference-optimization methods.
-
-**Engineering:** candidate generation · multi-evaluator scoring · LoRA training · evaluation pipelines  
-[Paper](https://arxiv.org/abs/2607.25136) · [Code](https://github.com/runhaoli-creator/dmapo) · [Training implementation](https://github.com/runhaoli-creator/dmapo/blob/main/src/dmapo/training/train.py)
-
-### PreDiff-LM — Hybrid Attention for Diffusion Language Models
-
-**Pretrained Discrete Masked Diffusion Language Modeling with Hybrid Attention**
-
-Adapts pretrained autoregressive transformers to masked diffusion while retaining causal attention in the observed prompt and bidirectional attention in the target. Under matched initialization and training, hybrid attention improves WikiText-103 perplexity from **34.1 to 28.7** and MAUVE from **0.71 to 0.78** over uniform bidirectional attention.
-
-**Research:** attention adaptation · discrete diffusion · confidence-aware decoding · controlled evaluation  
-[Paper](https://arxiv.org/abs/2607.25157) · [OpenReview](https://openreview.net/forum?id=zl9y14yJuN) · [Code](https://github.com/runhaoli-creator/PreDiff-LM-code) · [Model implementation](https://github.com/runhaoli-creator/PreDiff-LM-code/blob/main/models/masked_diffusion_lm.py)
+- **[DMAPO](https://github.com/runhaoli-creator/dmapo)** — Multi-evaluator agreement, confidence filtering, and preference optimization.
+- **[PreDiff-LM](https://github.com/runhaoli-creator/PreDiff-LM-code)** — Pretrained masked diffusion language modeling with hybrid attention.
+- **[ACM-ICL](https://github.com/runhaoli-creator/acm-icl)** — Calibrated multi-agent reasoning and vLLM multi-LoRA serving.
+- **[latent-agent-team](https://github.com/runhaoli-creator/latent-agent-team)** — Learned latent channels for budgeted communication between agents.
+- **[paper_read](https://github.com/runhaoli-creator/paper_read)** — Research workflows and citation-verification tools.
 
 <details>
-<summary><strong>Other open-source projects</strong></summary>
+<summary>More projects</summary>
 
-- [ACM-ICL](https://github.com/runhaoli-creator/acm-icl) — Agent reliability, calibrated reasoning, and vLLM multi-LoRA serving.
-- [paper_read](https://github.com/runhaoli-creator/paper_read) — Research workflows and citation-verification tools.
-- [latent-agent-team](https://github.com/runhaoli-creator/latent-agent-team) — Budgeted latent communication between agents.
 - [RAMTL](https://github.com/runhaoli-creator/RAMTL) — Shared-backbone, multi-role tool use.
 - [updr-reasoning](https://github.com/runhaoli-creator/updr-reasoning) — Uncertainty-guided debate and self-repair.
 - [DEAMS](https://github.com/runhaoli-creator/DEAMS) — Alignment across heterogeneous vision-language agents.
@@ -72,28 +110,26 @@ Adapts pretrained autoregressive transformers to masked diffusion while retainin
 
 </details>
 
-## Research
+## education
 
-| Experience | Work |
-| :--- | :--- |
-| **Princeton University** · Research Assistant<br>May–Sep 2026 | **Insurance Credit:** causal evaluation of preventive agent actions; fault-injection experiments across 50,000+ episodes and five agents. |
-| **UC Berkeley** · Research Assistant<br>Sep–Dec 2025 | **Data-centric alignment:** multi-evaluator agreement, confidence filtering, and preference optimization; asynchronous judge services with FastAPI, Redis, Docker, and CI. |
+**University of Southern California**  
+M.S. Computer Science · AI Track · 2025–2027 · GPA 4.0/4.0
 
-My research interests include agent reliability, diffusion language models, model alignment, and physical reasoning.
+**Hong Kong Baptist University**  
+B.S. Computer Science (Honors) · 2021–2025 · GPA 3.96/4.0
 
-[Publications & project details](https://runhaoli-creator.github.io/#research) · [Google Scholar](https://scholar.google.com/citations?user=HkEIcZ0AAAAJ&hl=en) · [OpenReview](https://openreview.net/profile?id=~Runhao_Li3)
-
-## Toolkit
+<details>
+<summary>Toolkit</summary>
 
 | Area | Technologies |
 | :--- | :--- |
-| **Software & services** | Python · C++ · SQL · FastAPI · Docker · Kubernetes · AWS · Redis |
-| **Training & alignment** | PyTorch · Transformers · TRL · PEFT · LoRA/QLoRA · DeepSpeed · FSDP |
-| **Agents, retrieval & inference** | LangGraph · vLLM · FAISS · BM25 · Reranking |
-| **Evaluation & delivery** | MLflow · Weights & Biases · GitHub Actions |
+| Software & services | Python · C++ · SQL · FastAPI · Docker · Kubernetes · AWS · Redis |
+| Training & alignment | PyTorch · Transformers · TRL · PEFT · LoRA/QLoRA · DeepSpeed · FSDP |
+| Agents, retrieval & inference | LangGraph · vLLM · FAISS · BM25 · Reranking |
+| Evaluation & delivery | MLflow · Weights & Biases · GitHub Actions |
 
-**Education:** USC M.S. Computer Science, AI track (2025–2027, GPA 4.0/4.0) · Hong Kong Baptist University B.S. Computer Science, Honors (2021–2025, GPA 3.96/4.0).
+</details>
 
 ---
 
-Interested in LLMs, agents, or ML infrastructure? [Get in touch](mailto:runhaoli@usc.edu).
+[runhaoli@usc.edu](mailto:runhaoli@usc.edu) · [Personal website](https://runhaoli-creator.github.io/)
