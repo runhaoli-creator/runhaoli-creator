@@ -6,7 +6,7 @@
 
 M.S. Computer Science (AI) at **USC** · Graduating **May 2027** · Los Angeles
 
-[Website](https://runhao-li.runhaolee136.chatgpt.site) · [Google Scholar](https://scholar.google.com/citations?user=HkEIcZ0AAAAJ&hl=en) · [LinkedIn](https://www.linkedin.com/in/runhao-li-lee021004) · [Email](mailto:runhaoli@usc.edu)
+[Website](https://runhaoli-creator.github.io/) · [Google Scholar](https://scholar.google.com/citations?user=HkEIcZ0AAAAJ&hl=en) · [LinkedIn](https://www.linkedin.com/in/runhao-li-lee021004) · [Email](mailto:runhaoli@usc.edu)
 
 **Seeking 2027 opportunities in Software Engineering (AI/ML) and Machine Learning Engineering.**
 
@@ -81,7 +81,7 @@ Adapts pretrained autoregressive transformers to masked diffusion while retainin
 
 My research interests include agent reliability, diffusion language models, model alignment, and physical reasoning.
 
-[Publications & project details](https://runhao-li.runhaolee136.chatgpt.site/#publications) · [Google Scholar](https://scholar.google.com/citations?user=HkEIcZ0AAAAJ&hl=en) · [OpenReview](https://openreview.net/profile?id=~Runhao_Li3)
+[Publications & project details](https://runhaoli-creator.github.io/#research) · [Google Scholar](https://scholar.google.com/citations?user=HkEIcZ0AAAAJ&hl=en) · [OpenReview](https://openreview.net/profile?id=~Runhao_Li3)
 
 ## Toolkit
 
