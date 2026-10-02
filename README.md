@@ -10,7 +10,7 @@ Previously, I worked on machine learning at **TikTok**, **General Motors**, and 
 
 Seeking **2027 opportunities in Software Engineering (AI/ML) and Machine Learning Engineering**.
 
-[research](#research) · [experience](#experience) · [open-source projects](#open-source-projects) · [education](#education)
+[research](#research) · [experience](#experience) · [open-source projects](#open-source-projects)
 
 ## research
 
@@ -109,14 +109,6 @@ Hongyang Du, Zongxia Li, Dawei Liu, <strong>Runhao Li</strong>, et al.<br>
 - [KTM-WM](https://github.com/runhaoli-creator/KTM-WM) — Kernel-based world models for agent planning.
 
 </details>
-
-## education
-
-**University of Southern California**  
-M.S. Computer Science · AI Track · 2025–2027 · GPA 4.0/4.0
-
-**Hong Kong Baptist University**  
-B.S. Computer Science (Honors) · 2021–2025 · GPA 3.96/4.0
 
 <details>
 <summary>Toolkit</summary>
